@@ -1,1 +1,1 @@
-Write-Host "Hello, World!"
+Write-Host "Computer: " ${env:Computer}
