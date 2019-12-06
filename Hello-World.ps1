@@ -9,3 +9,15 @@ foreach ($Job in ${env:JobList}  -split '\r\n?|\n\r?') {
 	}
 
 }
+
+Write-Host "----------------------------"
+
+foreach ($Job in ${env:JobList}.Split([Environment]::NewLine, [StringSplitOptions]::RemoveEmptyEntries)) {
+
+    	if ($Job) {
+
+   		Write-Host "`$Job = [" $Job "]"
+
+	}
+
+}
